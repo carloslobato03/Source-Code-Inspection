@@ -22,9 +22,12 @@ public class TicketMachineTeste {
     
     @Test
     public void inserirDinheiro() throws PapelMoedaInvalidaException, SaldoInsuficienteException{
+
         TicketMachine machine = new TicketMachine(10);
         machine.inserir(20);
         assertEquals(machine.getSaldo(),20);        
+        
+
     }
     public TicketMachineTeste() {
     }
